@@ -1,0 +1,113 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e12ff; 
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid white; 
+  }
+  
+  ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    margin-left: 20px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 5px;
+  }
+  
+  a:hover,
+  a.active {
+    background-color: #ff3ee5; 
+    transform: scale(1.1);
+  }
+  
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+    }
+    ul {
+      flex-direction: column;
+      align-items: center;
+    }
+    li {
+      margin: 10px 0;
+    }
+  }
+  
+  .footer {
+    background-color: #121212; 
+    color: #ffffff; 
+    padding: 20px 0; 
+    margin-top: 20px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; 
+  }
+  .footer .logo {
+    text-align: left;
+    margin-left: 30px; 
+  }
+  .footer .logo img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+  }
+  .footer .copyright {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .footer .address {
+    text-align: center;
+    flex: 1;
+    margin: 0 20px;
+  }
+  .footer .address p {
+    margin: 0;
+    font-size: 16px;
+  }
+  .footer .social-icons {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .footer .social-icons a {
+    color: #ffffff; 
+    margin: 0 10px; 
+    font-size: 20px; 
+  }
+  .footer .social-icons a:hover {
+    color: #000000; 
+  }
+  .footer .approved {
+    text-align: right;
+    margin-right: 30px; 
+  }
+  .footer .approved p {
+    margin: 0;
+    font-size: 16px;
+  }
+  .footer .approved img {
+    margin-left: 10px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid white; 
+  }

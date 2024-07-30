@@ -1,0 +1,132 @@
+.buildingImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .buildingImg img {
+    max-width: 500px;
+    border: 5px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+  }
+  
+  .buildingImg img:hover {
+    transform: scale(1.05);
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 40px;
+    padding: 20px;
+    background-color: #f8f9fa;
+  }
+  
+  h3, h5 {
+    color: #2c3e50;
+    font-weight: bold;
+  }
+  
+  h3 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  h5 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 1.1em;
+    color: #34495e;
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li {
+    font-size: 1.1em;
+    color: #34495e;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  ul li b {
+    color: #2c3e50;
+  }
+  
+  ul li:last-child {
+    border-bottom: none;
+  }
+  
+ .container2, .container3, .container4, .container5 {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  .split {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .left {
+    border-right: 2px solid #ddd;
+  }
+  
+  .right {
+    padding-left: 20px;
+  }
+  
+  h4 {
+    color: #2c3e50;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .department, .research-section, .placement-section {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .department:hover, .research-section:hover, .placement-section:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.02);
+  }
+  
+  p {
+    font-size: 1.1em;
+    color: #34495e;
+    margin-bottom: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .container2, .container3, .container4, .container5 {
+      flex-direction: column;
+    }
+    .left {
+      border-right: none;
+      border-bottom: 2px solid #ddd;
+    }
+    .right {
+      padding-left: 0;
+    }
+  }

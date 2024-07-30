@@ -1,0 +1,47 @@
+<div class="container">
+    <nav>
+      <ul>
+        <li><a href="deptpage" routerLinkActive="active">Staff Home Page</a></li>
+        <li><a href="aboutdept" routerLinkActive="active">About their Department</a></li>
+        <li><a href="deptstafftopper" routerLinkActive="active">Department Toppers</a></li>
+        <li><a href="sign-in" routerLinkActive="active">Logout</a></li>
+      </ul>
+    </nav>
+    <a href="deptstaffatt" class="link-button">Click here for attendance entry</a><br>
+    <a href="deptstaffmarks" class="link-button">Click here for marks entry</a>
+  </div>
+
+<form>
+    <div class="form-group">
+        <label for="department">Department</label>
+        <select id="department" name="department" required>
+            <option value="">Select Department</option>
+            <option value="CSE">CSE</option>
+            <option value="ECE">ECE</option>
+            <option value="IT">IT</option>
+            <option value="Civil">Civil</option>
+            <option value="Mechanical">Mechanical</option>
+            <option value="Electrical">Electrical</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="date">Date</label>
+        <input type="date" id="date" name="date" required>
+    </div>
+    <div class="form-group">
+        <label for="register-number">Register Number</label>
+        <input type="text" id="register-number" name="register-number" placeholder="Enter Register Number" required>
+    </div>
+    <div class="form-group">
+        <label>Attendance</label>
+        <div class="radio-group">
+            <label>
+                <input type="radio" name="attendance" value="present" required> Present
+            </label>
+            <label>
+                <input type="radio" name="attendance" value="absent" required> Absent
+            </label>
+        </div>
+    </div>
+    <button type="submit">Submit</button>
+</form>

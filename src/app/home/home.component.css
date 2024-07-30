@@ -1,0 +1,129 @@
+.marquee {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 1.2em;
+}
+
+.marquee-text {
+    animation: scroll-left 60s linear infinite;
+    white-space: nowrap;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.info-bar {
+    text-align: center;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+}
+
+.info-bar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.info-bar a:hover {
+    text-decoration: underline;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+}
+
+.image-gallery img {
+    width: 30%;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Line Styling */
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.container-1, .container-2 {
+    width: 48%;
+    padding: 15px;
+}
+
+.container-1 h5, .container-2 h5 {
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+    color: #343a40;
+}
+
+.line {
+    height: 2px;
+    background-color: #6c757d;
+    margin: 10px 0;
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.box {
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    width: 30%;
+}
+
+.embed-responsive {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.embed-responsive::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%; 
+}
+
+.embed-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+p {
+    color: #495057;
+    margin-bottom: 10px;
+}
